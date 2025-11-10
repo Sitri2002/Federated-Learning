@@ -4,6 +4,13 @@ from flwr.serverapp import Grid, ServerApp
 from flwr.serverapp.strategy import FedAvg
 
 from flower_fedavg.task import ResNet50, Bottleneck
+import logging
+
+logging.basicConfig(
+    filename="server.log",
+    level=logging.INFO,        
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 # Create ServerApp
 app = ServerApp()

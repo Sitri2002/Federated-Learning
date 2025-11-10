@@ -1,0 +1,239 @@
+2025-11-10 14:38:48,329 - DEBUG - Initialising: RayBackend
+2025-11-10 14:38:48,329 - DEBUG - Backend config: {'client_resources': {'num_cpus': 2, 'num_gpus': 0.2}, 'init_args': {'logging_level': 30, 'log_to_driver': True}, 'actor': {'tensorflow': 0}}
+2025-11-10 14:38:48,703 - INFO - Starting FedAvg strategy:
+2025-11-10 14:38:48,703 - INFO - 	\u251c\u2500\u2500 Number of rounds: 20
+2025-11-10 14:38:48,704 - INFO - 	\u251c\u2500\u2500 ArrayRecord (89.97 MB)
+2025-11-10 14:38:48,704 - INFO - 	\u251c\u2500\u2500 ConfigRecord (train): {'lr': 0.001}
+2025-11-10 14:38:48,704 - INFO - 	\u251c\u2500\u2500 ConfigRecord (evaluate): (empty!)
+2025-11-10 14:38:48,704 - INFO - 	\u251c\u2500\u2500> Sampling:
+2025-11-10 14:38:48,704 - INFO - 	\u2502	\u251c\u2500\u2500Fraction: train (0.50) | evaluate ( 0.50)
+2025-11-10 14:38:48,705 - INFO - 	\u2502	\u251c\u2500\u2500Minimum nodes: train (2) | evaluate (2)
+2025-11-10 14:38:48,705 - INFO - 	\u2502	\u2514\u2500\u2500Minimum available nodes: 2
+2025-11-10 14:38:48,705 - INFO - 	\u2514\u2500\u2500> Keys in records:
+2025-11-10 14:38:48,705 - INFO - 		\u251c\u2500\u2500 Weighted by: 'num-examples'
+2025-11-10 14:38:48,705 - INFO - 		\u251c\u2500\u2500 ArrayRecord key: 'arrays'
+2025-11-10 14:38:48,705 - INFO - 		\u2514\u2500\u2500 ConfigRecord key: 'config'
+2025-11-10 14:38:48,705 - INFO - 
+2025-11-10 14:38:48,705 - INFO - 
+2025-11-10 14:38:48,705 - INFO - [ROUND 1/20]
+2025-11-10 14:38:48,705 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:38:50,668 - DEBUG - Constructed ActorPool with: 5 actors
+2025-11-10 14:38:50,669 - DEBUG - Using InMemoryState
+2025-11-10 14:40:03,433 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:40:03,663 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 5.53125681591034}
+2025-11-10 14:40:03,663 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:40:06,550 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:40:06,551 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 1.75618636533618, 'eval_acc': 0.35000000000000003}
+2025-11-10 14:40:06,551 - INFO - 
+2025-11-10 14:40:06,551 - INFO - [ROUND 2/20]
+2025-11-10 14:40:06,551 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:41:11,579 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:41:11,776 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 4.880830942630768}
+2025-11-10 14:41:11,777 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:41:14,223 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:41:14,223 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 1.360480535402894, 'eval_acc': 0.5004}
+2025-11-10 14:41:14,223 - INFO - 
+2025-11-10 14:41:14,223 - INFO - [ROUND 3/20]
+2025-11-10 14:41:14,224 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:42:18,259 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:42:18,454 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 4.316867075347901}
+2025-11-10 14:42:18,454 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:42:21,040 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:42:21,040 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 1.1793062165379526, 'eval_acc': 0.5791999999999999}
+2025-11-10 14:42:21,040 - INFO - 
+2025-11-10 14:42:21,040 - INFO - [ROUND 4/20]
+2025-11-10 14:42:21,040 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:43:26,499 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:43:26,700 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 3.695599420642853}
+2025-11-10 14:43:26,700 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:43:29,263 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:43:29,264 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 1.05585763938725, 'eval_acc': 0.6262000000000001}
+2025-11-10 14:43:29,264 - INFO - 
+2025-11-10 14:43:29,264 - INFO - [ROUND 5/20]
+2025-11-10 14:43:29,264 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:44:34,865 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:44:35,066 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 3.1513981878757478}
+2025-11-10 14:44:35,066 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:44:37,651 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:44:37,652 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.9424668766558171, 'eval_acc': 0.669}
+2025-11-10 14:44:37,652 - INFO - 
+2025-11-10 14:44:37,652 - INFO - [ROUND 6/20]
+2025-11-10 14:44:37,652 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:45:42,729 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:45:42,924 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 2.6627930076599124}
+2025-11-10 14:45:42,924 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:45:45,378 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:45:45,378 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.882232115790248, 'eval_acc': 0.6982}
+2025-11-10 14:45:45,378 - INFO - 
+2025-11-10 14:45:45,378 - INFO - [ROUND 7/20]
+2025-11-10 14:45:45,379 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:46:52,977 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:46:53,173 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 2.2896802961349487}
+2025-11-10 14:46:53,173 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:46:55,789 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:46:55,790 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8421455008909107, 'eval_acc': 0.716}
+2025-11-10 14:46:55,790 - INFO - 
+2025-11-10 14:46:55,790 - INFO - [ROUND 8/20]
+2025-11-10 14:46:55,790 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:48:00,222 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:48:00,418 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 2.0424642265319823}
+2025-11-10 14:48:00,418 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:48:02,893 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:48:02,894 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.789701871946454, 'eval_acc': 0.736}
+2025-11-10 14:48:02,894 - INFO - 
+2025-11-10 14:48:02,894 - INFO - [ROUND 9/20]
+2025-11-10 14:48:02,894 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:49:08,171 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:49:08,366 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 1.7151739894509317}
+2025-11-10 14:49:08,367 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:49:10,858 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:49:10,859 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8257554172538221, 'eval_acc': 0.7476}
+2025-11-10 14:49:10,859 - INFO - 
+2025-11-10 14:49:10,859 - INFO - [ROUND 10/20]
+2025-11-10 14:49:10,859 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:50:15,852 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:50:16,073 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 1.447182535356283}
+2025-11-10 14:50:16,073 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:50:18,587 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:50:18,587 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8294087486341597, 'eval_acc': 0.7514}
+2025-11-10 14:50:18,587 - INFO - 
+2025-11-10 14:50:18,587 - INFO - [ROUND 11/20]
+2025-11-10 14:50:18,587 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:51:23,847 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:51:24,045 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 1.2923399293243887}
+2025-11-10 14:51:24,045 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:51:26,424 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:51:26,424 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.7875450659543276, 'eval_acc': 0.7678}
+2025-11-10 14:51:26,424 - INFO - 
+2025-11-10 14:51:26,424 - INFO - [ROUND 12/20]
+2025-11-10 14:51:26,425 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:52:31,773 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:52:31,971 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 1.0008549747921527}
+2025-11-10 14:52:31,972 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:52:34,446 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:52:34,446 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8383196373935791, 'eval_acc': 0.7730000000000001}
+2025-11-10 14:52:34,446 - INFO - 
+2025-11-10 14:52:34,446 - INFO - [ROUND 13/20]
+2025-11-10 14:52:34,446 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:53:39,816 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:53:40,020 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.892229394234717}
+2025-11-10 14:53:40,020 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:53:42,473 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:53:42,473 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8338521927595138, 'eval_acc': 0.7862000000000001}
+2025-11-10 14:53:42,473 - INFO - 
+2025-11-10 14:53:42,473 - INFO - [ROUND 14/20]
+2025-11-10 14:53:42,474 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:54:47,951 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:54:48,151 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.8399319425337017}
+2025-11-10 14:54:48,151 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:54:50,577 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:54:50,577 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8402088717557491, 'eval_acc': 0.7770000000000001}
+2025-11-10 14:54:50,577 - INFO - 
+2025-11-10 14:54:50,577 - INFO - [ROUND 15/20]
+2025-11-10 14:54:50,578 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:55:55,022 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:55:55,301 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.7527003589220346}
+2025-11-10 14:55:55,301 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:55:57,850 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:55:57,851 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8619463905692102, 'eval_acc': 0.7852000000000001}
+2025-11-10 14:55:57,851 - INFO - 
+2025-11-10 14:55:57,851 - INFO - [ROUND 16/20]
+2025-11-10 14:55:57,851 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:57:02,337 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:57:02,537 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.6426249424900861}
+2025-11-10 14:57:02,538 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:57:05,024 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:57:05,024 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8610610675066711, 'eval_acc': 0.7802000000000001}
+2025-11-10 14:57:05,024 - INFO - 
+2025-11-10 14:57:05,024 - INFO - [ROUND 17/20]
+2025-11-10 14:57:05,025 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:58:10,130 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:58:10,329 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.5591534636605531}
+2025-11-10 14:58:10,329 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:58:12,740 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:58:12,740 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8295865403022618, 'eval_acc': 0.802}
+2025-11-10 14:58:12,740 - INFO - 
+2025-11-10 14:58:12,740 - INFO - [ROUND 18/20]
+2025-11-10 14:58:12,740 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 14:59:17,298 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 14:59:17,497 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.5597118435390295}
+2025-11-10 14:59:17,497 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 14:59:19,985 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 14:59:19,985 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8737404949730263, 'eval_acc': 0.7956000000000001}
+2025-11-10 14:59:19,985 - INFO - 
+2025-11-10 14:59:19,986 - INFO - [ROUND 19/20]
+2025-11-10 14:59:19,986 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 15:00:25,346 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 15:00:25,539 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.5330180807769299}
+2025-11-10 15:00:25,539 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 15:00:28,019 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 15:00:28,019 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8319302080664783, 'eval_acc': 0.8008000000000001}
+2025-11-10 15:00:28,019 - INFO - 
+2025-11-10 15:00:28,020 - INFO - [ROUND 20/20]
+2025-11-10 15:00:28,020 - INFO - configure_train: Sampled 5 nodes (out of 10)
+2025-11-10 15:01:33,838 - INFO - aggregate_train: Received 5 results and 0 failures
+2025-11-10 15:01:34,034 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'train_loss': 0.4977619093768299}
+2025-11-10 15:01:34,034 - INFO - configure_evaluate: Sampled 5 nodes (out of 10)
+2025-11-10 15:01:36,478 - INFO - aggregate_evaluate: Received 5 results and 0 failures
+2025-11-10 15:01:36,478 - INFO - 	\u2514\u2500\u2500> Aggregated MetricRecord: {'eval_loss': 0.8658279439434409, 'eval_acc': 0.7968000000000001}
+2025-11-10 15:01:36,478 - INFO - 
+2025-11-10 15:01:36,478 - INFO - Strategy execution finished in 1367.77s
+2025-11-10 15:01:36,478 - INFO - 
+2025-11-10 15:01:36,479 - INFO - Final results:
+2025-11-10 15:01:36,479 - INFO - 
+2025-11-10 15:01:36,479 - INFO - 	Global Arrays:
+2025-11-10 15:01:36,479 - INFO - 		ArrayRecord (89.967 MB)
+2025-11-10 15:01:36,479 - INFO - 	
+2025-11-10 15:01:36,479 - INFO - 	Aggregated ClientApp-side Train Metrics:
+2025-11-10 15:01:36,479 - INFO - 	{ 1: {'train_loss': '5.5313e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  2: {'train_loss': '4.8808e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  3: {'train_loss': '4.3169e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  4: {'train_loss': '3.6956e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  5: {'train_loss': '3.1514e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  6: {'train_loss': '2.6628e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  7: {'train_loss': '2.2897e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  8: {'train_loss': '2.0425e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  9: {'train_loss': '1.7152e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  10: {'train_loss': '1.4472e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  11: {'train_loss': '1.2923e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  12: {'train_loss': '1.0009e+00'},
+2025-11-10 15:01:36,480 - INFO - 	  13: {'train_loss': '8.9223e-01'},
+2025-11-10 15:01:36,480 - INFO - 	  14: {'train_loss': '8.3993e-01'},
+2025-11-10 15:01:36,480 - INFO - 	  15: {'train_loss': '7.5270e-01'},
+2025-11-10 15:01:36,480 - INFO - 	  16: {'train_loss': '6.4262e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  17: {'train_loss': '5.5915e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  18: {'train_loss': '5.5971e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  19: {'train_loss': '5.3302e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  20: {'train_loss': '4.9776e-01'}}
+2025-11-10 15:01:36,481 - INFO - 	
+2025-11-10 15:01:36,481 - INFO - 	Aggregated ClientApp-side Evaluate Metrics:
+2025-11-10 15:01:36,481 - INFO - 	{ 1: {'eval_acc': '3.5000e-01', 'eval_loss': '1.7562e+00'},
+2025-11-10 15:01:36,481 - INFO - 	  2: {'eval_acc': '5.0040e-01', 'eval_loss': '1.3605e+00'},
+2025-11-10 15:01:36,481 - INFO - 	  3: {'eval_acc': '5.7920e-01', 'eval_loss': '1.1793e+00'},
+2025-11-10 15:01:36,481 - INFO - 	  4: {'eval_acc': '6.2620e-01', 'eval_loss': '1.0559e+00'},
+2025-11-10 15:01:36,481 - INFO - 	  5: {'eval_acc': '6.6900e-01', 'eval_loss': '9.4247e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  6: {'eval_acc': '6.9820e-01', 'eval_loss': '8.8223e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  7: {'eval_acc': '7.1600e-01', 'eval_loss': '8.4215e-01'},
+2025-11-10 15:01:36,481 - INFO - 	  8: {'eval_acc': '7.3600e-01', 'eval_loss': '7.8970e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  9: {'eval_acc': '7.4760e-01', 'eval_loss': '8.2576e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  10: {'eval_acc': '7.5140e-01', 'eval_loss': '8.2941e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  11: {'eval_acc': '7.6780e-01', 'eval_loss': '7.8755e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  12: {'eval_acc': '7.7300e-01', 'eval_loss': '8.3832e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  13: {'eval_acc': '7.8620e-01', 'eval_loss': '8.3385e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  14: {'eval_acc': '7.7700e-01', 'eval_loss': '8.4021e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  15: {'eval_acc': '7.8520e-01', 'eval_loss': '8.6195e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  16: {'eval_acc': '7.8020e-01', 'eval_loss': '8.6106e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  17: {'eval_acc': '8.0200e-01', 'eval_loss': '8.2959e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  18: {'eval_acc': '7.9560e-01', 'eval_loss': '8.7374e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  19: {'eval_acc': '8.0080e-01', 'eval_loss': '8.3193e-01'},
+2025-11-10 15:01:36,482 - INFO - 	  20: {'eval_acc': '7.9680e-01', 'eval_loss': '8.6583e-01'}}
+2025-11-10 15:01:36,482 - INFO - 	
+2025-11-10 15:01:36,482 - INFO - 	ServerApp-side Evaluate Metrics:
+2025-11-10 15:01:36,482 - INFO - 	{}
+2025-11-10 15:01:36,482 - INFO - 
+2025-11-10 15:01:36,569 - DEBUG - ServerApp finished running.
+2025-11-10 15:01:36,569 - DEBUG - ServerApp finished running.
+2025-11-10 15:01:36,569 - DEBUG - Triggered stop event for Simulation Engine.
+2025-11-10 15:01:37,486 - DEBUG - Terminated 5 actors
+2025-11-10 15:01:38,037 - DEBUG - Terminated RayBackend
+2025-11-10 15:01:38,037 - DEBUG - Stopping Simulation Engine now.
