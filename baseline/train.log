@@ -1,0 +1,33 @@
+2025-11-10 15:29:01,053 | INFO | ===== CIFAR-10 ResNet-50 Baseline =====
+2025-11-10 15:29:01,053 | INFO | Args: Namespace(epochs=30, batch_size=256, lr=0.001, weight_decay=0.0001, seed=24, num_workers=8, save_path='resnet50_cifar10.pt', log_path='train.log')
+2025-11-10 15:30:07,564 | INFO | Epoch 001/30 | Train Loss 1.5153 | Val Loss 1.3009 | Val Acc 53.48%
+2025-11-10 15:31:09,296 | INFO | Epoch 002/30 | Train Loss 0.9784 | Val Loss 0.9815 | Val Acc 67.01%
+2025-11-10 15:32:11,894 | INFO | Epoch 003/30 | Train Loss 0.7039 | Val Loss 0.8479 | Val Acc 71.03%
+2025-11-10 15:33:14,793 | INFO | Epoch 004/30 | Train Loss 0.5414 | Val Loss 0.7763 | Val Acc 72.50%
+2025-11-10 15:34:17,031 | INFO | Epoch 005/30 | Train Loss 0.4312 | Val Loss 0.7531 | Val Acc 75.87%
+2025-11-10 15:35:20,765 | INFO | Epoch 006/30 | Train Loss 0.3564 | Val Loss 0.6518 | Val Acc 78.12%
+2025-11-10 15:36:23,805 | INFO | Epoch 007/30 | Train Loss 0.2900 | Val Loss 0.6145 | Val Acc 79.31%
+2025-11-10 15:37:26,942 | INFO | Epoch 008/30 | Train Loss 0.2594 | Val Loss 0.8421 | Val Acc 74.91%
+2025-11-10 15:38:30,197 | INFO | Epoch 009/30 | Train Loss 0.2161 | Val Loss 0.9354 | Val Acc 73.10%
+2025-11-10 15:39:32,925 | INFO | Epoch 010/30 | Train Loss 0.1870 | Val Loss 0.7810 | Val Acc 77.51%
+2025-11-10 15:40:36,405 | INFO | Epoch 011/30 | Train Loss 0.1650 | Val Loss 0.7273 | Val Acc 78.38%
+2025-11-10 15:41:39,719 | INFO | Epoch 012/30 | Train Loss 0.1533 | Val Loss 0.8797 | Val Acc 77.12%
+2025-11-10 15:42:42,696 | INFO | Epoch 013/30 | Train Loss 0.1424 | Val Loss 0.6204 | Val Acc 81.85%
+2025-11-10 15:43:44,063 | INFO | Epoch 014/30 | Train Loss 0.1228 | Val Loss 0.8021 | Val Acc 78.31%
+2025-11-10 15:44:45,429 | INFO | Epoch 015/30 | Train Loss 0.1237 | Val Loss 0.7638 | Val Acc 78.78%
+2025-11-10 15:45:47,203 | INFO | Epoch 016/30 | Train Loss 0.1122 | Val Loss 0.7404 | Val Acc 79.90%
+2025-11-10 15:46:48,639 | INFO | Epoch 017/30 | Train Loss 0.1036 | Val Loss 0.7709 | Val Acc 80.11%
+2025-11-10 15:47:51,374 | INFO | Epoch 018/30 | Train Loss 0.1113 | Val Loss 0.6476 | Val Acc 82.22%
+2025-11-10 15:48:53,801 | INFO | Epoch 019/30 | Train Loss 0.1015 | Val Loss 0.8294 | Val Acc 79.39%
+2025-11-10 15:49:56,177 | INFO | Epoch 020/30 | Train Loss 0.0857 | Val Loss 0.8468 | Val Acc 79.46%
+2025-11-10 15:50:57,758 | INFO | Epoch 021/30 | Train Loss 0.0938 | Val Loss 0.9260 | Val Acc 76.78%
+2025-11-10 15:51:59,554 | INFO | Epoch 022/30 | Train Loss 0.0992 | Val Loss 0.7010 | Val Acc 81.81%
+2025-11-10 15:53:01,097 | INFO | Epoch 023/30 | Train Loss 0.0891 | Val Loss 0.8912 | Val Acc 78.44%
+2025-11-10 15:54:02,867 | INFO | Epoch 024/30 | Train Loss 0.0678 | Val Loss 0.6768 | Val Acc 82.97%
+2025-11-10 15:55:07,097 | INFO | Epoch 025/30 | Train Loss 0.0519 | Val Loss 0.8155 | Val Acc 80.37%
+2025-11-10 15:56:11,058 | INFO | Epoch 026/30 | Train Loss 0.0605 | Val Loss 0.7099 | Val Acc 80.65%
+2025-11-10 15:57:15,360 | INFO | Epoch 027/30 | Train Loss 0.0680 | Val Loss 0.6929 | Val Acc 82.30%
+2025-11-10 15:58:20,116 | INFO | Epoch 028/30 | Train Loss 0.0702 | Val Loss 0.8188 | Val Acc 80.59%
+2025-11-10 15:59:26,751 | INFO | Epoch 029/30 | Train Loss 0.0487 | Val Loss 0.6937 | Val Acc 82.31%
+2025-11-10 16:00:35,524 | INFO | Epoch 030/30 | Train Loss 0.0612 | Val Loss 0.7287 | Val Acc 82.27%
+2025-11-10 16:00:35,528 | INFO | Training complete. Best accuracy 82.97%
