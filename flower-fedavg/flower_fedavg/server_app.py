@@ -27,7 +27,7 @@ def main(grid: Grid, context: Context) -> None:
     lr: float = context.run_config["lr"]
 
     # Load global model
-    global_model = ResNet50(Bottleneck, [3,4,6,3], 10) # 10 labels for CIFAR-10
+    global_model = ResNet50(Bottleneck, [3,4,6,3], 14)
     arrays = ArrayRecord(global_model.state_dict())
 
     # Initialize FedAvg strategy

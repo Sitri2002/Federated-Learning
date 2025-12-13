@@ -1,0 +1,27 @@
+2025-12-13 14:32:43,049 | INFO | ===== MIMIC-CXR ResNet-50 FedAvg =====
+2025-12-13 14:32:43,049 | INFO | Args: epochs=3 batch_size=32 lr=0.001 weight_decay=0.0001 seed=0 log_path=C:/Users/nguye/Documents/federated-learning/fedML-fedavg/logs/train.log
+2025-12-13 14:32:56,599 | INFO | Epoch 001/060 | Train Loss 0.4206 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:33:10,157 | INFO | Epoch 002/060 | Train Loss 0.3634 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:33:23,630 | INFO | Epoch 003/060 | Train Loss 0.3566 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:33:36,997 | INFO | Epoch 001/060 | Train Loss 0.3811 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:33:50,704 | INFO | Epoch 002/060 | Train Loss 0.3643 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:34:04,095 | INFO | Epoch 003/060 | Train Loss 0.3546 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:34:17,249 | INFO | Epoch 001/060 | Train Loss 0.3967 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:34:30,453 | INFO | Epoch 002/060 | Train Loss 0.3703 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:34:44,012 | INFO | Epoch 003/060 | Train Loss 0.3562 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:34:57,879 | INFO | Epoch 001/060 | Train Loss 0.3640 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:35:11,458 | INFO | Epoch 002/060 | Train Loss 0.3416 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:35:25,057 | INFO | Epoch 003/060 | Train Loss 0.3277 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:35:39,685 | INFO | Epoch 001/060 | Train Loss 0.3699 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:35:53,453 | INFO | Epoch 002/060 | Train Loss 0.3405 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:36:07,158 | INFO | Epoch 003/060 | Train Loss 0.3284 | Val Loss N/A | Val Acc N/A
+2025-12-13 14:36:11,230 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3691 | Val Acc 82.68% | microF1 0.3966
+2025-12-13 14:36:12,185 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3849 | Val Acc 81.88% | microF1 0.4047
+2025-12-13 14:36:16,000 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3809 | Val Acc 82.68% | microF1 0.3660
+2025-12-13 14:36:17,011 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3964 | Val Acc 80.80% | microF1 0.3582
+2025-12-13 14:36:20,820 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3894 | Val Acc 81.52% | microF1 0.3867
+2025-12-13 14:36:21,782 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3749 | Val Acc 82.41% | microF1 0.4910
+2025-12-13 14:36:25,769 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3688 | Val Acc 83.04% | microF1 0.3729
+2025-12-13 14:36:26,790 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.4023 | Val Acc 81.16% | microF1 0.4023
+2025-12-13 14:36:30,649 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3784 | Val Acc 82.46% | microF1 0.3879
+2025-12-13 14:36:31,633 | INFO | Epoch 003/060 | Train Loss N/A | Val Loss 0.3844 | Val Acc 80.71% | microF1 0.3793

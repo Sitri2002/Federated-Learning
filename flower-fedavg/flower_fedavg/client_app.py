@@ -15,7 +15,7 @@ def train(msg: Message, context: Context):
     """Train the model on local data."""
 
     # Load the model and initialize it with the received weights
-    model = ResNet50(Bottleneck, [3,4,6,3], 10) # CIFAR-10 has 10 labels
+    model = ResNet50(Bottleneck, [3,4,6,3], 14) # 14 MIMIC Labels, dont be stupid like me and set it to 10 cause you forgot you ran CIFAR-10 before
     model.load_state_dict(msg.content["arrays"].to_torch_state_dict())
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
@@ -50,7 +50,7 @@ def evaluate(msg: Message, context: Context):
     """Evaluate the model on local data."""
 
     # Load the model and initialize it with the received weights
-    model = ResNet50(Bottleneck, [3,4,6,3], 10)
+    model = ResNet50(Bottleneck, [3,4,6,3], 14)
     model.load_state_dict(msg.content["arrays"].to_torch_state_dict())
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)

@@ -1,0 +1,31 @@
+common_args:
+  training_type: simulation
+  using_mlops: false
+  using_gpu: false
+  seed: 0
+  federated_optimizer: FedAvg
+  dataset: mimic
+  client_optimizer: adam
+  learning_rate: 0.0001
+  frequency_of_the_test: 1
+  log_path: "C:/Users/nguye/Documents/federated-learning/fedML-fedavg/logs/train.log"
+
+comm_args:
+  backend: sp
+
+federated_args:
+  client_num_in_total: 5
+  client_num_per_round: 5
+  comm_round: 20
+
+train_args:
+  epochs: 3
+  batch_size: 32
+  lr: 0.0001
+  weight_decay: 0.00001
+  momentum: 0.9
+
+data_args:
+  data_cache_dir: "C:/Users/nguye/Documents/federated-learning/fedML-fedavg/data_cache"
+  manifest_path: "C:/Users/nguye/Documents/federated-learning/fedML-fedavg/data_cache/mimic-cxr-labeled.xlsx"
+  image_dir: "C:/Users/nguye/Documents/federated-learning/fedML-fedavg/data_cache/images"

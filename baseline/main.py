@@ -72,7 +72,6 @@ class Bottleneck(nn.Module):
         out = self.relu(out)
         return out
 
-
 class ResNet50(nn.Module):
     def __init__(self, block, layers, num_classes=1000):
         super().__init__()
@@ -90,7 +89,7 @@ class ResNet50(nn.Module):
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
 
         # Final pooling + fc
-        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1)) 
         self.fc = nn.Linear(512 * block.expansion, num_classes)
 
         # Initialize weights (Kaiming)
@@ -181,7 +180,7 @@ def make_model(num_classes: int = 10) -> nn.Module:
 def main():
     parser = argparse.ArgumentParser(description="CIFAR-10 ResNet-50 Baseline (Non-Federated)")
     parser.add_argument("--epochs", type=int, default=30)
-    parser.add_argument("--batch_size", type=int, default=256)
+    parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--weight_decay", type=float, default=1e-4)
     parser.add_argument("--seed", type=int, default=24)
